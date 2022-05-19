@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href='../static/img/form.css' />
+    <title>Document</title>
+</head>
+<body>
+    <div class="header container">
+        <div class="row">
+           <div class="col"></div>
+           <div class="header__logo col">
+              <img class="header__logo__img" src="../static/img/depositphotos_494013044-stock-illustration-chemistry-formula-icon-molecule-isolated.jpg">
+           </div>
+           <div class="col"></div>
+              <h1>Plotting binary</h1>
+           <div class="header__endline"></div>
+        </div>
+     </div>
+     <div class="main container">
+         <h2>Let's fill the form and create an amazing graph</h2>
+        <h2>Now choose details</h2>
+         <div class="row">
+            <div class="col"></div>
+            <div class="col">
+             <form action="/plot", method="POST" class="row g-3">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">First Element</label>
+                    <select class="form-select" id="inputGroupSelect01" name="first_element">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Second Element</label>
+                    <select class="form-select" id="inputGroupSelect01" name="second_element">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="input-group col-md-4">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Start</span>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="start" step="0.01" min="0" max="1">
+                </div>
+                <div class="input-group col-md-4">
+                    <span class="input-group-text" id="inputGroup-sizing-default">End</span>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="end" step="0.01" min="0" max="1">
+                </div>
+                <div class="input-group col-md-4">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Step</span>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="step" step="0.01" min="0" max="1">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Select one of two elements</label>
+                    <select class="form-select" id="inputGroupSelect01" name="Vx">
+                      <option selected>Choose...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                    </select>
+                </div>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="VA" checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                      VA
+                    </label>
+                </div>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="tielines">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Lines on the graph
+                    </label>
+                </div>
+                <div class="form-check col-md-4">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="scatter">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Dotes on the graph
+                    </label>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+            </div>
+            <div class="col"></div>
+        </div>
+     </div>
+</body>
+</html>
